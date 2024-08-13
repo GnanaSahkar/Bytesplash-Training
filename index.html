@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form action="" method="post">
+            <label for="firstName">First Name:</label>
+             
+            <input type="text" id="firstName" name="firstName" required placeholder="Enter your First Name">
+             
+            <label for="lastName">Last Name:</label>
+             
+            <input type="text" id="lastName" name="lastName" required placeholder="Enter your Last Name">
+             
+            <label for="mobile">Mobile No:</label>
+             
+            <input type="tel" id="mobile" name="mobile" required placeholder="Enter your Mobile No">
+             
+            <label>Gender:</label>
+             
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+             
+              
+            <label for="email">Email:</label>
+             
+            <input type="email" id="email" name="email" required placeholder="Enter your Email">
+             
+            <label for="dob">Date of Birth:</label>
+             
+            <input type="date" id="dob" name="dob">
+             
+            <label for="address">Street Address:</label>
+             
+            <textarea id="address" name="address" placeholder="Enter the House No and Street Address"></textarea>
+             
+            <label for="city">City:</label>
+             
+            <select id="city" name="city">
+                <option value="Nellore">Nellore</option>
+                <option value="Tirupathi">Tirupathi</option>
+                <option value="Ananthapur">Ananthapur</option>
+                <option value="Godavari">Godavari</option>
+                <option value="Bheemavaram">Bheemavaram</option>
+            </select>
+             
+            <label for="state">State:</label>
+             
+            <input list="selectstate" id="state" name="state">
+            <datalist id="selectstate">
+                <option value="Andhra Pradesh"></option>
+                <option value="Karnataka"></option>
+                <option value="Tamilnadu"></option>
+                <option value="Kerala"></option>
+                <option value="Odisha"></option>
+            </datalist>
+             
+            <label for="pincode">Pincode:</label>
+             
+            <input type="number" id="pincode" name="pincode" min="100000" max="999999" placeholder="Enter the Pincode">
+            <div class="sub">
+                <button type="submit"  id="btn">Submit</button>
+            </div>  
+        </form>
+    </div>
+</body>
+</html>
